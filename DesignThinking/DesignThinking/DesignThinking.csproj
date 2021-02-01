@@ -1,0 +1,62 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.78" />
+    <PackageReference Include="Dapper.Contrib" Version="2.0.78" />
+    <PackageReference Include="Npgsql" Version="4.0.9" />
+    <PackageReference Include="System.Drawing.Common" Version="5.0.2" />
+    <PackageReference Include="Telerik.UI.for.Xamarin" Version="2021.1.224.1" />
+    <PackageReference Include="Xam.Plugin.Media" Version="5.0.1" />
+    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1451" />  
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Views\AccountManagementPage %28Kopie%29.xaml.cs" />
+    <Compile Remove="Views\CreateTeamPage %28Kopie%29.xaml.cs" />
+    <Compile Remove="Views\RegisterPage %28Kopie%29.xaml.cs" />
+    <Compile Remove="Views\Task\CreateProtocolPage.xaml.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\MethodDashboard\" />
+    <Folder Include="Views\Camera\" />
+    <Folder Include="Views\AccountManagement\" />
+    <Folder Include="ViewModels\AccountManagementViewModels\" />
+    <Folder Include="ViewModels\CameraViewModels\" />
+    <Folder Include="ViewModels\MethodDashboardViewModels\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\Protocol\CreateProtocolMethodPage.xaml.cs">
+      <DependentUpon>CreateProtocolMethodPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Protocol\ProtocolMethodOverviewPage.xaml.cs">
+      <DependentUpon>ProtocolMethodOverviewPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Task\CreateTaskPage.xaml.cs">
+      <DependentUpon>CreateTaskPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Task\ShowTaskPage.xaml.cs">
+      <DependentUpon>ShowTaskPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Views\Protocol\CreateProtocolPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Protocol\ImagePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Protocol\ProtocolOverviewPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Protocol\ShowImagePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

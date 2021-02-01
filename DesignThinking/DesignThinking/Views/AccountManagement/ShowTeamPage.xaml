@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DesignThinking.Views.ShowTeamPage"
+             xmlns:vm="clr-namespace:DesignThinking.ViewModels" xmlns:models="clr-namespace:DesignThinking.Models"
+             Title="{Binding Title}">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#96d1ff</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <StackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <ListView Grid.Row="1"
+                              Grid.ColumnSpan="4"
+                              BackgroundColor="Transparent"
+                              ItemsSource="{Binding UserList}"
+                              HasUnevenRows="True"
+                              SeparatorVisibility="Default">
+                <ListView.ItemTemplate>
+                    <DataTemplate x:DataType="models:User">
+                        <ViewCell>
+                            <Grid Padding="3">
+                                <Button Text="{Binding Mail}" BackgroundColor="#ffe599" CornerRadius="15" TextColor="Black"/>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DesignThinking.Views.ProjectPage"
+             xmlns:vm="clr-namespace:DesignThinking.ViewModels"
+             Title="{Binding Title}">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#96d1ff</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <Grid IsVisible="{Binding Visible,Mode=TwoWay}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackLayout Orientation="Vertical">
+            <Label IsVisible="{Binding VisibleError, Mode=TwoWay}" Text="Bitte einloggen." />
+            <Label Text="Offene Aufgaben" FontSize="Medium" HorizontalTextAlignment="Center" />
+            <ListView Grid.Row="1"
+                      IsRefreshing="{Binding IsBusy}"
+                              BackgroundColor="Transparent"
+                              ItemsSource="{Binding TasksFalse}"
+                              HasUnevenRows="True"
+                              SeparatorVisibility="Default">
+                    <ListView.ItemTemplate>
+                        <DataTemplate x:DataType="vm:TaskViewModel">
+                            <ViewCell>
+                                <Grid Padding="3">
+                                    <Button Text="{Binding Model.ShortDescription}" Command="{Binding TaskCommand}" BackgroundColor="Red" CornerRadius="15" TextColor="Black"/>
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            <Label Grid.Row="2" Text="Abgeschlossene Aufgaben" FontSize="Medium" HorizontalTextAlignment="Center" />
+            <ListView Grid.Row="3"
+                      IsRefreshing="{Binding IsBusy}"
+                              BackgroundColor="Transparent"
+                              ItemsSource="{Binding TasksTrue}"
+                              HasUnevenRows="True"
+                              SeparatorVisibility="Default">
+                    <ListView.ItemTemplate>
+                        <DataTemplate x:DataType="vm:TaskViewModel">
+                            <ViewCell>
+                                <Grid Padding="3">
+                                <Button Text="{Binding Model.ShortDescription}" Command="{Binding TaskCommand}" BackgroundColor="#96c47d" CornerRadius="15" TextColor="Black"/>
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            <Button Grid.Row="4"
+                        Margin="0,10,0,0"
+                        Text="Aufgabe erstellen"
+                        Command="{Binding CreateTaskCommand}"
+                        BackgroundColor="LightGray"
+                        TextColor="Black"
+                        CornerRadius="6"
+                        WidthRequest="100"
+                        HeightRequest="50"/>
+        </StackLayout>
+    </Grid>
+
+</ContentPage>

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input" xmlns:vm="clr-namespace:DesignThinking.ViewModels" xmlns:models="clr-namespace:DesignThinking.Models" xmlns:telerik="clr-namespace:Telerik.XamarinForms.DataControls;assembly=Telerik.XamarinForms.DataControls"
+             x:Class="DesignThinking.Views.CreateProtocolMethodPage"
+             Title="{Binding Title}">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">LightGray</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Text = "Raum wählen:" FontSize="Medium"/>
+            <Picker Grid.Row="0" Grid.Column="1" ItemsSource="{Binding Rooms}" SelectedItem="{Binding SelectedRoom}"/>
+            <Label Grid.Row="1" Grid.Column="0" Text = "Phase wählen:" FontSize="Medium"/>
+            <Picker Grid.Row="1" Grid.Column="1" ItemsSource="{Binding ThinkingTypes}" SelectedItem="{Binding SelectedPhase}"/>
+            <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Text = "Methode wählen" FontSize="Medium" HorizontalOptions="CenterAndExpand"/>
+
+        <telerik:RadListView Grid.Row="3" Grid.Column="0"
+                             
+                             Grid.ColumnSpan="2"
+                             BackgroundColor="Transparent"
+                             ItemsSource="{Binding Methods}"
+                             SelectedItem="{Binding SelectedMethod, Mode=TwoWay}"
+                                SelectionMode="Single"
+                                SelectionGesture="Tap"
+                                HeightRequest="300">
+            <telerik:RadListView.ItemTemplate>
+                <DataTemplate x:DataType="models:Method">
+
+                    <Grid HorizontalOptions="Center"
+                                          VerticalOptions="Center"
+                                          BackgroundColor="Transparent">
+                        <Label Text="{Binding Name}"
+                                               TextColor="Black"
+                                               FontSize="14"
+                                               HeightRequest="40"
+                                               HorizontalOptions="Center"
+                                               VerticalOptions="FillAndExpand"/>
+                    </Grid>
+                </DataTemplate>
+            </telerik:RadListView.ItemTemplate>
+
+        </telerik:RadListView>
+        <Button Grid.Row="4" Grid.ColumnSpan="2"
+                        Margin="0,10,0,0"
+                        Text="Speichern"
+                        Command="{Binding SafeCommand}"
+                        BackgroundColor="LightGray"
+                        TextColor="Black"
+                        CornerRadius="6"
+                        WidthRequest="100"
+                        HeightRequest="50"/>
+        </Grid>
+
+</ContentPage>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+             x:Class="DesignThinking.Views.ShowTaskPage"
+             Title="{Binding Title}">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">LightGray</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Text = "Kurzbeschreibung:" FontSize="Medium"/>
+            <Label Grid.Row="0" Grid.Column="1" Text = "{Binding Model.ShortDescription}" HeightRequest="50" FontSize="Medium"/>
+            <Label Grid.Row="1" Grid.Column="0" Text = "Verantwortlich:" FontSize="Medium"/>
+            <Label Grid.Row="1" Grid.Column="1" Text = "{Binding Model.User}" HeightRequest="50" FontSize="Medium"/>
+            <Label Grid.Row="2" Grid.Column="0" Text = "Frist:"/>
+            <Label Grid.Row="2" Grid.Column="1" Text = "{Binding Model.Deadline}"/>
+            <Label Grid.Row="3" Grid.Column="0" Text = "Priorität:"/>
+            <Label Grid.Row="3" Grid.Column="1" Text = "{Binding Model.Priority}"/>
+            <Label Grid.Row="4" Grid.Column="0" Text = "Staus:"/>
+            <CheckBox IsChecked="{Binding Model.IsCompleted}" Grid.Row="4" Grid.Column="1"/>
+            <Button Grid.Row="5" Grid.Column="0"
+                        Margin="0,10,0,0"
+                        Text="Fotos hinzufügen"
+                        Command="{Binding ImageCommand}"
+                        BackgroundColor="LightGray"
+                        TextColor="Black"
+                        CornerRadius="6"
+                        WidthRequest="100"
+                        HeightRequest="50"/>
+            <Button Grid.Row="5" Grid.Column="1"
+                        Margin="0,10,0,0"
+                        Text="Foto anzeigen"
+                        Command="{Binding ShowImageCommand}"
+                        BackgroundColor="LightGray"
+                        TextColor="Black"
+                        CornerRadius="6"
+                        WidthRequest="100"
+                        HeightRequest="50"/>
+            <Button Grid.Row="6" Grid.ColumnSpan="2"
+                        Margin="0,10,0,0"
+                        Text="Speichern"
+                        Command="{Binding SafeCommand}"
+                        BackgroundColor="LightGray"
+                        TextColor="Black"
+                        CornerRadius="6"
+                        WidthRequest="100"
+                        HeightRequest="50"/>
+        </Grid>
+    </ScrollView>
+</ContentPage>

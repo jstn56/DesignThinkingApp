@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+             x:Class="DesignThinking.Views.ShowProtocolMethodPage"
+             Title="{Binding Title}">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">LightGray</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Text = "Raum:" FontSize="Medium"/>
+            <Label Grid.Row="0" Grid.Column="1" Text = "{Binding Model.RoomType}" FontSize="Medium"/>
+            <Label Grid.Row="1" Grid.Column="0" Text = "Phase:" FontSize="Medium"/>
+            <Label Grid.Row="1" Grid.Column="1" Text = "{Binding Model.ThinkingType}" FontSize="Medium"/>
+            <Label Grid.Row="2" Grid.Column="0" Text = "Methode:" FontSize="Medium"/>
+            <Label Grid.Row="2" Grid.Column="1" Text = "{Binding Model.Method.Name}" HeightRequest="70" FontSize="Medium"/>
+            <Label Grid.Row="3" Grid.Column="0" Text = "Staus:" FontSize="Medium"/>
+            <CheckBox IsChecked="{Binding Model.IsCompleted, Mode=TwoWay}" Grid.Row="3" Grid.Column="1" />
+            <Label Grid.Row="4" Grid.Column="0" Text = "Bewertung:" FontSize="Medium"/>
+            <telerikInput:RadShapeRating x:Name="rating1" Value="{Binding Model.Rating, Mode=TwoWay}" ItemShape="{x:Static telerikInput:Geometries.Star}" Grid.Row="4" Grid.Column="1" HeightRequest="25" />
+            <Label Grid.Row="5" Grid.Column="0" Text = "Probleme:" FontSize="Medium"/>
+            <Entry Grid.Row="5" Grid.Column="1" Text="{Binding Model.MethodProblems, Mode=TwoWay}" HorizontalTextAlignment="Center" FontSize="Medium"/>
+            <Button Grid.Row="6"  Grid.Column="0"
+                        Margin="0,10,0,0"
+                        Text="Foto hinzufügen"
+                        Command="{Binding ImageCommand}"
+                        BackgroundColor="LightGray"
+                        TextColor="Black"
+                        CornerRadius="6"
+                        WidthRequest="100"
+                        HeightRequest="50"/>
+            <Button Grid.Row="6"  Grid.Column="1"
+                        Margin="0,10,0,0"
+                        Text="Foto anzeigen"
+                        Command="{Binding ShowImageCommand}"
+                        BackgroundColor="LightGray"
+                        TextColor="Black"
+                        CornerRadius="6"
+                        WidthRequest="100"
+                        HeightRequest="50"/>
+            <Button Grid.Row="7" Grid.ColumnSpan="2"
+                        Margin="0,10,0,0"
+                        Text="Speichern"
+                        Command="{Binding SafeCommand}"
+                        BackgroundColor="LightGray"
+                        TextColor="Black"
+                        CornerRadius="6"
+                        WidthRequest="100"
+                        HeightRequest="50"/>
+        </Grid>
+    </ScrollView>
+</ContentPage>

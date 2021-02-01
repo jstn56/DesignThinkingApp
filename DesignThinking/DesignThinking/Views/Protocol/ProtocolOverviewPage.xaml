@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:telerik="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives" 
+             xmlns:vm="clr-namespace:DesignThinking.ViewModels.ModelViewModels"
+             x:Class="DesignThinking.Views.Protocol.ProtocolOverviewPage"
+             Title="{Binding Title}">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#96d1ff</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <telerik:RadBusyIndicator x:Name="BusyIndicator"
+                                       AnimationContentHeightRequest="100"
+                                       AnimationContentWidthRequest="100"
+                                       IsBusy="{Binding IsBusy, Mode=TwoWay}">
+        <telerik:RadBusyIndicator.Content>
+            <Grid IsVisible="{Binding Visible,Mode=TwoWay}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <StackLayout Orientation="Vertical">
+                    <Label IsVisible="{Binding VisibleError, Mode=TwoWay}" Text="Bitte einloggen." />
+                    <Label Text="Protokolle" FontSize="Medium" HorizontalTextAlignment="Center" />
+                    <ListView Grid.Row="1"
+                              BackgroundColor="Transparent"
+                              ItemsSource="{Binding Protocols}"
+                              HasUnevenRows="True"
+                              SeparatorVisibility="Default">
+                        <ListView.ItemTemplate>
+                            <DataTemplate x:DataType="vm:ProtocolModelViewModel">
+                                <ViewCell>
+                                    <Grid Padding="3">
+                                        <Button Text="{Binding Model.Created}" Command="{Binding OpenProtocolCommand}" BackgroundColor="#96c47d" CornerRadius="15" TextColor="Black"/>
+                                    </Grid>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+                    <Button Grid.Row="2"
+                        Margin="0,10,0,0"
+                        Text="Protokoll erstellen"
+                        Command="{Binding CreateProtocolCommand}"
+                        BackgroundColor="LightGray"
+                        TextColor="Black"
+                        CornerRadius="6"
+                        WidthRequest="100"
+                        HeightRequest="50"/>
+                </StackLayout>
+            </Grid>
+        </telerik:RadBusyIndicator.Content>
+    </telerik:RadBusyIndicator>
+</ContentPage>

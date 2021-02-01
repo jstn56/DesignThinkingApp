@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DesignThinking.Views.ShowMethodPage"
+             Title="{Binding Title}">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">LightGray</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <StackLayout Grid.Row="1" Grid.ColumnSpan="2" HorizontalOptions ="Center" Padding="30,24,30,24" Spacing="10" BackgroundColor="LightGray">
+                <Label Text="{Binding Model.Name}" FontSize="Large" HorizontalTextAlignment="Center"/>
+                <Label Text="Beschreibung" FontSize="Medium"/>
+                <Label Text="{Binding Model.Description}"/>
+                <Button Text="Weblink" Command="{Binding OpenWebCommand}"/>
+                <Label Text="Raum" FontSize="Medium"/>
+                <Label Text="{Binding Model.RoomType}"/>
+                <Label Text="Phase" FontSize="Medium"/>
+                <Label Text="{Binding Model.ThinkingType}"/>
+            </StackLayout>
+        </Grid>
+    </ScrollView>
+</ContentPage>

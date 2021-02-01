@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input" xmlns:vm="clr-namespace:DesignThinking.ViewModels"
+             x:Class="DesignThinking.Views.CreateTaskPage"
+             Title="{Binding Title}">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">LightGray</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Text = "Kurzbeschreibung:" FontSize="Medium" />
+            <Entry Grid.Row="0" Grid.Column="1" Text="{Binding ShortDescription}" HorizontalTextAlignment="Center"/>
+            <Label Grid.Row="1" Grid.Column="0" Text = "Verantwortlichen wählen:" FontSize="Medium" />
+        <Picker Grid.Row="1" Grid.Column="1" ItemsSource="{Binding Users}" ItemDisplayBinding="{Binding Surname}" SelectedItem="{Binding SelectedUser}" HorizontalTextAlignment="Center">
+                       
+        </Picker>
+
+
+        <Label Grid.Row="2" Grid.Column="0" Text = "Frist:" FontSize="Medium"/>
+        <telerikInput:RadDateTimePicker x:Name="genrePicker"
+                                                        Grid.Row="2" Grid.Column="1"
+                                                        Date="{Binding Deadline}"
+                                                        Placeholder="Select Date &amp; Time" 
+                                                        Margin="0,4"
+                                                        HorizontalOptions="Center"/>
+        <Label Grid.Row="3" Grid.Column="0" Text = "Priorität wählen:" FontSize="Medium"/>
+        <Picker Grid.Row="3" Grid.Column="1" ItemsSource="{Binding Priority}" SelectedItem="{Binding SelectedPriority}" HorizontalTextAlignment="Center"/>
+            <Button Grid.Row="4" Grid.ColumnSpan="2"
+                        Margin="0,10,0,0"
+                        Text="Speichern"
+                        Command="{Binding SafeCommand}"
+                        BackgroundColor="LightGray"
+                        TextColor="Black"
+                        CornerRadius="6"
+                        WidthRequest="100"
+                        HeightRequest="50"/>
+        </Grid>
+
+</ContentPage>
