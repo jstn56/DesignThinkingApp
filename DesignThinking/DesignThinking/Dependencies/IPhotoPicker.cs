@@ -4,7 +4,7 @@ using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignThinking.Dependecies
+namespace DesignThinking.Dependencies
 {
     public interface IPhotoPicker
     {

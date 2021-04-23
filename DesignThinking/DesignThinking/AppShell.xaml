@@ -6,13 +6,11 @@
        
        Title="DesignThinking"
        x:Class="DesignThinking.AppShell">
-
     <!--
         The overall app visual hierarchy is defined here, along with navigation.
     
         https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell/
     -->
-
     <Shell.Resources>
         <ResourceDictionary>
             <Style x:Key="BaseStyle" TargetType="Element">
@@ -30,12 +28,10 @@
             <Style TargetType="FlyoutItem" BasedOn="{StaticResource BaseStyle}" />
         </ResourceDictionary>
     </Shell.Resources>
-
     <TabBar>
         <ShellContent Title="DB" Icon="icon-template" ContentTemplate="{DataTemplate local:DashboardPage}" />
         <ShellContent Title="PM" Icon="icon-draft" ContentTemplate="{DataTemplate proto:ProtocolOverviewPage}" />
         <ShellContent Title="PR" Icon="icon-stopwatch" ContentTemplate="{DataTemplate local:ProjectPage}" />
         <ShellContent Title="KV" Icon="icon-user" ContentTemplate="{DataTemplate local:AccountManagementPage}" />
     </TabBar>
-
 </Shell>

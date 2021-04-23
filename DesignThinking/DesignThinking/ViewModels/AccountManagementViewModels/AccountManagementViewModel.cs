@@ -10,6 +10,9 @@ using Xamarin.Forms;
 
 namespace DesignThinking.ViewModels
 {
+    /// <summary>
+    /// Represents the view model for the accountmanagment
+    /// </summary>
     public class AccountManagementViewModel : BaseViewModel
     {
         private AccountManagementPage accPage;
@@ -20,7 +23,10 @@ namespace DesignThinking.ViewModels
         private string password;
         private UserService userService;
 
-
+        /// <summary>
+        /// Constructor to pass the page 
+        /// </summary>
+        /// <param name="accPage">Page</param>
         public AccountManagementViewModel(AccountManagementPage accPage)
         {
             Title = "Kontoverwaltung";
