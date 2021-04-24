@@ -1,4 +1,4 @@
-﻿using DesignThinking.Dependecies;
+﻿using DesignThinking.Dependencies;
 using DesignThinking.Views.Protocol;
 using System;
 using System.Drawing;

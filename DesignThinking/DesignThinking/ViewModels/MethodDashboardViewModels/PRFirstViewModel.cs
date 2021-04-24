@@ -16,6 +16,7 @@ namespace DesignThinking.ViewModels
     {
         private PRFirstPage prFirstPage;
         private ICommand openPRSecond;
+        private ICommand dashboardCommand;
         public ObservableCollection<MethodViewModel> Methods { get; set; }
 
         public PRFirstViewModel(PRFirstPage prFirstPage)
@@ -23,6 +24,7 @@ namespace DesignThinking.ViewModels
             Title = "Problemraum";
             this.prFirstPage = prFirstPage;
             openPRSecond = new Command(o => OpenPRSecond());
+            dashboardCommand = new Command(o => BackToDashboard());
             Methods = new ObservableCollection<MethodViewModel>();
             Methods.Add(new MethodViewModel(new Method
             {
@@ -78,11 +80,18 @@ namespace DesignThinking.ViewModels
                 ThinkingType = "Divergent"
             }, prFirstPage));
         }
+
+        private async void BackToDashboard()
+        {
+            await prFirstPage.Navigation.PopToRootAsync();
+        }
+
         private async void OpenPRSecond()
         {
             await prFirstPage.Navigation.PushAsync(new PRSecondPage());
         }
 
         public ICommand PRSecond { get => openPRSecond; set => openPRSecond = value; }
+        public ICommand DashboardCommand { get => dashboardCommand; set => dashboardCommand = value; }
     }
 }

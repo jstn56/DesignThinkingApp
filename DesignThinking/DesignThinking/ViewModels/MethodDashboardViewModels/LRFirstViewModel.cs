@@ -16,6 +16,7 @@ namespace DesignThinking.ViewModels
         private LRFirstPage lrFirstPage;
         private ICommand openPRSecond;
         private ICommand openLRSecond;
+        private ICommand dashboardCommand;
         public ObservableCollection<MethodViewModel> Methods { get; set; }
 
         public LRFirstViewModel(LRFirstPage lrFirstPage)
@@ -24,6 +25,7 @@ namespace DesignThinking.ViewModels
             this.lrFirstPage = lrFirstPage;
             openPRSecond = new Command(o => OpenPRSecond());
             openLRSecond = new Command(o => OpenLRSecond());
+            dashboardCommand = new Command(o => BackToDashboard());
             Methods = new ObservableCollection<MethodViewModel>();
             Methods.Add(new MethodViewModel(new Method
             {
@@ -61,6 +63,12 @@ namespace DesignThinking.ViewModels
                 ThinkingType = "Divergent"
             }, lrFirstPage));
         }
+
+        private async void BackToDashboard()
+        {
+            await lrFirstPage.Navigation.PopToRootAsync();
+        }
+
         private async void OpenLRSecond()
         {
             await lrFirstPage.Navigation.PushAsync(new LRSecondPage());
@@ -73,5 +81,6 @@ namespace DesignThinking.ViewModels
 
         public ICommand PRSecond { get => openPRSecond; set => openPRSecond = value; }
         public ICommand LRSecond { get => openLRSecond; set => openLRSecond = value; }
+        public ICommand DashboardCommand { get => dashboardCommand; set => dashboardCommand = value; }
     }
 }

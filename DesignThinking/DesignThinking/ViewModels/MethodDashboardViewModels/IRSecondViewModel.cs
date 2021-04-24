@@ -15,6 +15,7 @@ namespace DesignThinking.ViewModels
     {
         private IRSecondPage irSecondPage;
         private ICommand openIRFirst;
+        private ICommand dashboardCommand;
         public ObservableCollection<MethodViewModel> Methods { get; set; }
 
         public IRSecondViewModel(IRSecondPage iRSecondPage)
@@ -22,6 +23,7 @@ namespace DesignThinking.ViewModels
             Title = "Implementierungsraum";
             this.irSecondPage = iRSecondPage;
             openIRFirst = new Command(o => OpenIRFirst());
+            dashboardCommand = new Command(o => BackToDashboard());
             Methods = new ObservableCollection<MethodViewModel>();
             Methods.Add(new MethodViewModel(new Method
             {
@@ -47,6 +49,12 @@ namespace DesignThinking.ViewModels
                 ThinkingType = "Konvergent"
             }, irSecondPage));
         }
+
+        private async void BackToDashboard()
+        {
+            await irSecondPage.Navigation.PopToRootAsync();
+        }
+
         //Für das inserten in der datenbank 
         //private void Insert()
         //{
@@ -63,5 +71,6 @@ namespace DesignThinking.ViewModels
         }
 
         public ICommand IRFirst { get => openIRFirst; set => openIRFirst = value; }
+        public ICommand DashboardCommand { get => dashboardCommand; set => dashboardCommand = value; }
     }
 }

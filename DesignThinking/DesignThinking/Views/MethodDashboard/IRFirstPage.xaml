@@ -4,7 +4,9 @@
              xmlns:vm="clr-namespace:DesignThinking.ViewModels" xmlns:model="clr-namespace:DesignThinking.Models"
              x:Class="DesignThinking.Views.IRFirstPage"
              Title="{Binding Title}">
-
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior Command="{Binding DashboardCommand}"/>
+    </Shell.BackButtonBehavior>
     <ContentPage.Resources>
         <ResourceDictionary>
             <Color x:Key="Accent">LightGray</Color>

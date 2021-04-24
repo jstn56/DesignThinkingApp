@@ -5,8 +5,7 @@
              xmlns:vm="clr-namespace:DesignThinking.ViewModels"
              Title="{Binding Title}">
     <Shell.BackButtonBehavior>
-        <BackButtonBehavior Command="{Binding LogoutCommand}"
-                            IconOverride="back.png" />
+        <BackButtonBehavior Command="{Binding LogoutCommand}"/>
     </Shell.BackButtonBehavior>
     <ContentPage.Resources>
         <ResourceDictionary>

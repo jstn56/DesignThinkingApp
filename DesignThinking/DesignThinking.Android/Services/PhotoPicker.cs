@@ -4,7 +4,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using DesignThinking.Dependecies;
+using DesignThinking.Dependencies;
 using DesignThinking.Droid.Services;
 using System;
 using System.Collections.Generic;

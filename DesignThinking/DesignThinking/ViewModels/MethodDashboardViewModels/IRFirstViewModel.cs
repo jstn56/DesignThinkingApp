@@ -16,15 +16,16 @@ namespace DesignThinking.ViewModels
         private IRFirstPage irFirstPage;
         private ICommand openLRSecond;
         private ICommand openIRSecond;
+        private ICommand dashboardCommand;
         public ObservableCollection<MethodViewModel> Methods { get; set; }
 
         public IRFirstViewModel(IRFirstPage irFirstPage)
         {
             Title = "Implementierungsraum";
             this.irFirstPage = irFirstPage;
-           
             openLRSecond = new Command(o => OpenLRSecond());
             openIRSecond = new Command(o => OpenIRSecond());
+            dashboardCommand = new Command(o => BackToDashboard());
             Methods = new ObservableCollection<MethodViewModel>();
             Methods.Add(new MethodViewModel(new Method
             {
@@ -65,6 +66,11 @@ namespace DesignThinking.ViewModels
             }, irFirstPage));
         }
 
+        private async void BackToDashboard()
+        {
+            await irFirstPage.Navigation.PopToRootAsync();
+        }
+
         private async void OpenLRSecond()
         {
             await irFirstPage.Navigation.PushAsync(new LRSecondPage());
@@ -77,5 +83,6 @@ namespace DesignThinking.ViewModels
 
         public ICommand IRSecond { get => openIRSecond; set => openIRSecond = value; }
         public ICommand LRSecond { get => openLRSecond; set => openLRSecond = value; }
+        public ICommand DashboardCommand { get => dashboardCommand; set => dashboardCommand = value; }
     }
 }

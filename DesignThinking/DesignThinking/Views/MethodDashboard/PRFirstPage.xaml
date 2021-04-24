@@ -6,7 +6,9 @@
              xmlns:model="clr-namespace:DesignThinking.Models"
              xmlns:ui="clr-namespace:DesignThinking.Resources.UI"
              Title="{Binding Title}">
-
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior Command="{Binding DashboardCommand}"/>
+    </Shell.BackButtonBehavior>
     <ContentPage.Resources>
         <ResourceDictionary>
             <Color x:Key="Accent">LightGray</Color>

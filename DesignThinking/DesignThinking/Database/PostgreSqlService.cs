@@ -42,7 +42,6 @@ namespace DesignThinking.Database
             con = new NpgsqlConnection(connectionString);
             cmd = new NpgsqlCommand(null, con);
             try
-
             {
                 cmd.CommandTimeout = 0;
                 cmd.Connection.Open();
@@ -50,7 +49,6 @@ namespace DesignThinking.Database
             }
             catch (Exception)
             {
-
             }
             while (cmd.Connection.State != ConnectionState.Open)
             {

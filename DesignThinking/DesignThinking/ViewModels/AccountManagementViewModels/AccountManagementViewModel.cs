@@ -38,6 +38,7 @@ namespace DesignThinking.ViewModels
 
         private async void Registration()
         {
+            
             await accPage.Navigation.PushAsync(new RegisterPage());
         }
         /// <summary>
