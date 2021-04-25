@@ -43,7 +43,7 @@ namespace DesignThinking.ViewModels.ProtocolViewModels
                         {
                             protocols = new ObservableCollection<ProtocolModelViewModel>(protocolService.GetAll()
                                 .Select(x => new ProtocolModelViewModel(x, protocolPage))
-                                .Where(x => x.Model.TeamIdent == Session.CurrentUser.TeamIdent));
+                                .Where(x => x.Model.TeamIdent == Session.CurrentUser?.TeamIdent));
 
                             OnPropertyChanged(nameof(Protocols));
                             LoadMethods();

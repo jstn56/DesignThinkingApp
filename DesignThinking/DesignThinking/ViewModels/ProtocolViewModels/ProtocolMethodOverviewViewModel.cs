@@ -44,7 +44,6 @@ namespace DesignThinking.ViewModels
             foreach (var item in protocolMethodsTrue)
                 item.Model.Method = methodService.Get(item.Model.MethodIdent);
         }
-
         public void RefreshList()
         {
 
@@ -73,6 +72,8 @@ namespace DesignThinking.ViewModels
         public ICommand CreateMethodCommand { get => createMethodCommand; set => createMethodCommand = value; }
         public ObservableCollection<ProtocolMethodViewModel> ProtocolMethodsFalse { get => protocolMethodsFalse; set => protocolMethodsFalse = value; }
         public ObservableCollection<ProtocolMethodViewModel> ProtocolMethodsTrue { get => protocolMethodsTrue; set => protocolMethodsTrue = value; }
+
+        public ProtocolMethodViewModel SelectedItem { get; set; }
 
         public bool Visible { get => Session.CurrentUser != null; set => visible = value; }
         public bool VisibleError { get => Session.CurrentUser == null; set => visible = value; }
