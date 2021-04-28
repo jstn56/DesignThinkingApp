@@ -25,10 +25,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\MethodDashboard\" />
-    <Folder Include="Views\Camera\" />
     <Folder Include="Views\AccountManagement\" />
     <Folder Include="ViewModels\AccountManagementViewModels\" />
-    <Folder Include="ViewModels\CameraViewModels\" />
     <Folder Include="ViewModels\MethodDashboardViewModels\" />
   </ItemGroup>
   <ItemGroup>

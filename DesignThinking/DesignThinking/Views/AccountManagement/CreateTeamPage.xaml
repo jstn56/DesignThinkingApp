@@ -50,7 +50,7 @@
 
                         <StackLayout Orientation="Horizontal">
 
-                            <Label Text="{Binding Model.Mail}" TextColor="Black"  BackgroundColor="LightGray" />
+                            <Label Text="{Binding Model.Mail}" TextColor="Black"  BackgroundColor="LightGray" HorizontalOptions="CenterAndExpand" />
                             <CheckBox IsChecked="{Binding IsSelected}" />
                         </StackLayout>
                     </ViewCell>

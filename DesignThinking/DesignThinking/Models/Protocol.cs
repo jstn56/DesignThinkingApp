@@ -15,6 +15,5 @@ namespace DesignThinking.Models
         [Write(false)]
         public IEnumerable<ProtocolMethod> ProtocolMethods { get; set; } = new List<ProtocolMethod>();
         public DateTime Created { get; set; }
-
     }
 }

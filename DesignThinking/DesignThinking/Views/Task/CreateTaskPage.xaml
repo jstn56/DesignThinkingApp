@@ -8,32 +8,23 @@
             <Color x:Key="Accent">LightGray</Color>
         </ResourceDictionary>
     </ContentPage.Resources>
-
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <Label Grid.Row="0" Grid.Column="0" Text = "Kurzbeschreibung:" FontSize="Medium" />
-            <Entry Grid.Row="0" Grid.Column="1" Text="{Binding ShortDescription}" HorizontalTextAlignment="Center"/>
-            <Label Grid.Row="1" Grid.Column="0" Text = "Verantwortlichen wählen:" FontSize="Medium" />
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" Text = "Kurzbeschreibung:" FontSize="Medium" />
+        <Entry Grid.Row="0" Grid.Column="1" Text="{Binding ShortDescription}" HorizontalTextAlignment="Center"/>
+        <Label Grid.Row="1" Grid.Column="0" Text = "Verantwortlichen wählen:" FontSize="Medium" />
         <Picker Grid.Row="1" Grid.Column="1" ItemsSource="{Binding Users}" ItemDisplayBinding="{Binding Surname}" SelectedItem="{Binding SelectedUser}" HorizontalTextAlignment="Center">
-                       
         </Picker>
-
-
         <Label Grid.Row="2" Grid.Column="0" Text = "Frist:" FontSize="Medium"/>
         <telerikInput:RadDateTimePicker x:Name="genrePicker"
                                                         Grid.Row="2" Grid.Column="1"
@@ -43,7 +34,7 @@
                                                         HorizontalOptions="Center"/>
         <Label Grid.Row="3" Grid.Column="0" Text = "Priorität wählen:" FontSize="Medium"/>
         <Picker Grid.Row="3" Grid.Column="1" ItemsSource="{Binding Priority}" SelectedItem="{Binding SelectedPriority}" HorizontalTextAlignment="Center"/>
-            <Button Grid.Row="4" Grid.ColumnSpan="2"
+        <Button Grid.Row="4" Grid.ColumnSpan="2"
                         Margin="0,10,0,0"
                         Text="Speichern"
                         Command="{Binding SafeCommand}"
@@ -52,6 +43,5 @@
                         CornerRadius="6"
                         WidthRequest="100"
                         HeightRequest="50"/>
-        </Grid>
-
+    </Grid>
 </ContentPage>
