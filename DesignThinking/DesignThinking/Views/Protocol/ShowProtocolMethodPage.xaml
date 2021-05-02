@@ -32,7 +32,7 @@
             <Label Grid.Row="1" Grid.Column="1" Text = "{Binding Model.ThinkingType}" FontSize="Medium"/>
             <Label Grid.Row="2" Grid.Column="0" Text = "Methode:" FontSize="Medium"/>
             <Label Grid.Row="2" Grid.Column="1" Text = "{Binding Model.Method.Name}" HeightRequest="70" FontSize="Medium"/>
-            <Label Grid.Row="3" Grid.Column="0" Text = "Staus:" FontSize="Medium"/>
+            <Label Grid.Row="3" Grid.Column="0" Text = "Durchführung abschließen:" FontSize="Medium" HeightRequest="50"/>
             <CheckBox IsChecked="{Binding Model.IsCompleted, Mode=TwoWay}" Grid.Row="3" Grid.Column="1" />
             <Label Grid.Row="4" Grid.Column="0" Text = "Bewertung:" FontSize="Medium"/>
             <telerikInput:RadShapeRating x:Name="rating1" Value="{Binding Model.Rating, Mode=TwoWay}" ItemShape="{x:Static telerikInput:Geometries.Star}" Grid.Row="4" Grid.Column="1" HeightRequest="25" />
