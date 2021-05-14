@@ -21,7 +21,7 @@ namespace DesignThinking.ViewModels
 
         public PRFirstViewModel(PRFirstPage prFirstPage)
         {
-            Title = "Problemraum";
+            Title = "Problem recherchieren";
             this.prFirstPage = prFirstPage;
             openPRSecond = new Command(o => OpenPRSecond());
             dashboardCommand = new Command(o => BackToDashboard());

@@ -36,7 +36,7 @@ namespace DesignThinking.Business.Repository
         {
             using (var con = SqlService.GetConnection())
             {
-                string sql = "Select \"Image\" From filestructure where \"ProtocolIdent\" = @ident";
+                string sql = "Select \"Image\" From filestructure where \"ProtocolIdent\" = @ident order by ident desc";
                 protocolMethod.Image = con.QueryFirstOrDefault<byte[]>(sql, new { ident = protocolMethod.ident });
             }
         }

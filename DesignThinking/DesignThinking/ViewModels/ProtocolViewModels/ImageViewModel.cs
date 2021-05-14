@@ -23,7 +23,7 @@ namespace DesignThinking.ViewModels.ProtocolViewModels
         private ITaskService taskService;
         Stream source;
         MemoryStream source2;
-        
+        private ICommand takeImageCommand;
 
         public ImageViewModel(ImagePage imagePage)
         {
@@ -33,6 +33,7 @@ namespace DesignThinking.ViewModels.ProtocolViewModels
             safeImage = new Command(o => SafeImage());
             protocolMethodService = new ProtocolMethodService();
             taskService = new TaskService();
+            takeImageCommand = new Command(o => TakeImage());
         }
 
         private async void SafeImage()
@@ -81,10 +82,25 @@ namespace DesignThinking.ViewModels.ProtocolViewModels
             OnPropertyChanged(nameof(ImageSosse));
             
         }
+        private async void TakeImage()
+        {
+            var photo = await Plugin.Media.CrossMedia.Current.TakePhotoAsync(new Plugin.Media.Abstractions.StoreCameraMediaOptions() { });
+
+            if (photo != null)
+            {
+                source = photo.GetStream();
+                source2 = new MemoryStream();
+                source.CopyTo(source2);
+                source.Position = 0;
+                imagePage.UNFUCKMYLIFEPLEASE(ImageSource.FromStream(() =>  source));
+            }
+        }
 
 
         public ICommand AddImageCommand { get => addImage; set => addImage = value; }
         public ICommand SafeImageCommand { get => safeImage; set => safeImage = value; }
+
+        public ICommand TakeImageCommand { get => takeImageCommand; set => takeImageCommand = value; }
 
         public ImageSource ImageSosse { get => imageSource; set => imageSource = value; }
     }

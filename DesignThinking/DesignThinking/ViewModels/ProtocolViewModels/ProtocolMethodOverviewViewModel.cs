@@ -6,6 +6,7 @@ using DesignThinking.Base;
 using DesignThinking.Business.Service;
 using DesignThinking.Interfaces;
 using DesignThinking.Models;
+using DesignThinking.ViewModels.ModelViewModels;
 using DesignThinking.Views;
 using Xamarin.Essentials;
 using Xamarin.Forms;
@@ -50,16 +51,21 @@ namespace DesignThinking.ViewModels
             Application.Current.Dispatcher.BeginInvokeOnMainThread(new Action(
                         () =>
                         {
+                            if (Parent is ProtocolModelViewModel viewModel)
+                            {
+
+
                             protocolMethodsFalse = new ObservableCollection<ProtocolMethodViewModel>(protocolMethodService.GetAll()
                 .Select(pm => new ProtocolMethodViewModel(pm, protocolPage) { Parent = this })
-                .Where(x => x.Model.IsCompleted == false && protocolService.Get(x.Model.ProtocolIdent)?.TeamIdent == Session.CurrentUser?.TeamIdent));
+                .Where(x => x.Model.IsCompleted == false && protocolService.Get(x.Model.ProtocolIdent)?.TeamIdent == Session.CurrentUser?.TeamIdent  && viewModel.Model.ident == x.Model.ProtocolIdent));
 
                             protocolMethodsTrue = new ObservableCollection<ProtocolMethodViewModel>(protocolMethodService.GetAll()
                                 .Select(pm => new ProtocolMethodViewModel(pm, protocolPage) { Parent = this })
-                                .Where(x => x.Model.IsCompleted == true && protocolService.Get(x.Model.ProtocolIdent)?.TeamIdent == Session.CurrentUser?.TeamIdent));
+                                .Where(x => x.Model.IsCompleted == true && protocolService.Get(x.Model.ProtocolIdent)?.TeamIdent == Session.CurrentUser?.TeamIdent && viewModel.Model.ident == x.Model.ProtocolIdent));
                             OnPropertyChanged(nameof(ProtocolMethodsFalse));
                             OnPropertyChanged(nameof(ProtocolMethodsTrue));
                             LoadMethods();
+                            }
                         }));
             IsBusy = false;
             OnPropertyChanged(nameof(IsBusy));

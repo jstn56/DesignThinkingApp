@@ -21,7 +21,7 @@ namespace DesignThinking.ViewModels
 
         public LRSecondViewModel(LRSecondPage lRSecondPage)
         {
-            Title = "Lösungsraumraum";
+            Title = "Ideen auswählen";
             this.lrSecondPage = lRSecondPage;
             openLRFirst = new Command(o => OpenLRFirst());
             openIRFirst = new Command(o => OpenIRFirst());

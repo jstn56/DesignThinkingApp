@@ -21,7 +21,7 @@ namespace DesignThinking.ViewModels
 
         public PRSecondViewModel(PRSecondPage pRSecondPage)
         {
-            Title = "Problemraum";
+            Title = "Problem definieren";
             this.prSecondPage = pRSecondPage;
             Methods = new ObservableCollection<MethodViewModel>();
             openPRFirst = new Command(o => OpenPRFirst());

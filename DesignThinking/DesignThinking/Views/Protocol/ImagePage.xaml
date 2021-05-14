@@ -32,7 +32,7 @@ xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.Xa
         </protocol:CustomRadEditorControl>
         <telerik:RadImageEditorToolbar Grid.Row="2" ImageEditor="{x:Reference imageEditor}"  Grid.ColumnSpan="2"/>
         <!--Anzeige für Fotos -->
-        <Button Grid.Row="3" Grid.ColumnSpan="2"
+        <Button Grid.Row="3" Grid.Column="0"
                         Margin="0,10,0,0"
                         Text="Bild hinzufügen"
                         Command="{Binding AddImageCommand}"
@@ -41,7 +41,16 @@ xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.Xa
                         CornerRadius="6"
                         WidthRequest="100"
                         HeightRequest="50"/>
-        <Button Grid.Row="4" Grid.ColumnSpan="2"
+        <Button Grid.Row="3" Grid.Column="1"
+                        Margin="0,10,0,0"
+                        Text="Bild aufnehmen"
+                        Command="{Binding TakeImageCommand}"
+                        BackgroundColor="LightGray"
+                        TextColor="Black"
+                        CornerRadius="6"
+                        WidthRequest="100"
+                        HeightRequest="50"/>
+        <Button Grid.Row="5" Grid.ColumnSpan="2"
                         Margin="0,10,0,0"
                         Text="Speichern"
                         Command="{Binding SafeImageCommand}"

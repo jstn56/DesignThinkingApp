@@ -20,7 +20,7 @@ namespace DesignThinking.ViewModels
 
         public IRSecondViewModel(IRSecondPage iRSecondPage)
         {
-            Title = "Implementierungsraum";
+            Title = "Tests beurteilen";
             this.irSecondPage = iRSecondPage;
             openIRFirst = new Command(o => OpenIRFirst());
             dashboardCommand = new Command(o => BackToDashboard());

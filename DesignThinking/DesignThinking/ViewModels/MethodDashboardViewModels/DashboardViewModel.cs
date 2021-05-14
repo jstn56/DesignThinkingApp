@@ -21,7 +21,7 @@ namespace DesignThinking.ViewModels
 
         public DashboardViewModel(DashboardPage dashboardPage)
         {
-            Title = "Dashboard";
+            Title = "";
             this.dashboardPage = dashboardPage;
             openProtocolPage = new Command(o => OpenProtocolPage());
             openPRFirst = new Command(o => OpenPRFirst());
@@ -35,7 +35,7 @@ namespace DesignThinking.ViewModels
 
         private async void OpenProtocolPage()
         {
-            await dashboardPage.Navigation.PushAsync(new ProtocolOverviewPage(null));
+            await dashboardPage.Navigation.PushAsync(new ProjectPage());
         }
 
         private async void OpenPRFirst()

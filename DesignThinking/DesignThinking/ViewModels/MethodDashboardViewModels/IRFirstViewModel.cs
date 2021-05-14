@@ -21,7 +21,7 @@ namespace DesignThinking.ViewModels
 
         public IRFirstViewModel(IRFirstPage irFirstPage)
         {
-            Title = "Implementierungsraum";
+            Title = "Prototyp bauen";
             this.irFirstPage = irFirstPage;
             openLRSecond = new Command(o => OpenLRSecond());
             openIRSecond = new Command(o => OpenIRSecond());

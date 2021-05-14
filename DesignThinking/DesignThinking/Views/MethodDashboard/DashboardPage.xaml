@@ -48,6 +48,7 @@
                     <Button Grid.Row="5" Grid.Column="1" Margin="10,5,10,5" WidthRequest ="120" CornerRadius="15" Command ="{Binding IRSecond}" BackgroundColor="#96c47d" TextColor="LightGray" HorizontalOptions="StartAndExpand"/>
                 </Grid>
                 <Button Margin="0,10,0,0" Text="Projektmanagement"
+                        Command="{Binding ProtocolPage}"
                         BackgroundColor="LightGray"
                         TextColor="Black"
                         CornerRadius="6"

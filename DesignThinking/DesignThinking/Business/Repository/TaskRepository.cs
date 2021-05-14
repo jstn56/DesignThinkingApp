@@ -38,7 +38,7 @@ namespace DesignThinking.Business.Repository
         {
             using (var con = SqlService.GetConnection())
             {
-                string sql = "Select \"Image\" From filestructure where \"TaskIdent\" = @ident";
+                string sql = "Select \"Image\" From filestructure where \"TaskIdent\" = @ident order by ident desc";
                 task.Image = con.QueryFirstOrDefault<byte[]>(sql, new { ident = task.ident });
             }
         }
