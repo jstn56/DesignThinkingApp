@@ -31,6 +31,11 @@ namespace DesignThinking.ViewModels
 
         private async void Registration()
         {
+            if (firstname == null || surname == null || mail == null || password == null)
+            {
+                await registerPage.DisplayAlert("Fehler", "Es wurden nicht alle Eigenschaften ausgefüllt.", "OK");
+                return;
+            }
             userService.Save(new User
             {
                 FirstName = this.firstname,

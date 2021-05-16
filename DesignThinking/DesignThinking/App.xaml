@@ -1,6 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+         xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+         xmlns:chart="clr-namespace:Telerik.XamarinForms.Chart;assembly=Telerik.XamarinForms.Chart"
+         xmlns:primitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
+         xmlns:telerikDataControls="clr-namespace:Telerik.XamarinForms.DataControls;assembly=Telerik.XamarinForms.DataControls"
+         xmlns:telerikCommon="clr-namespace:Telerik.XamarinForms.Common;assembly=Telerik.XamarinForms.Common"
+         xmlns:dataGrid="clr-namespace:Telerik.XamarinForms.DataGrid;assembly=Telerik.XamarinForms.DataGrid"
              x:Class="DesignThinking.App">
     <!--
         Define global resources and styles here, that apply to all pages in your app.
@@ -8,6 +14,16 @@
     <Application.Resources>
         <ResourceDictionary>
             <Color x:Key="Primary">#2196F3</Color>
+            <ResourceDictionary>
+                <ResourceDictionary.MergedDictionaries>
+                    <ResourceDictionary MergedWith="telerikCommon:BlueResources"/>
+                    <ResourceDictionary MergedWith="telerikInput:TelerikThemeStyles"/>
+                    <ResourceDictionary MergedWith="primitives:TelerikThemeStyles"/>
+                    <ResourceDictionary MergedWith="chart:TelerikThemeStyles"/>
+                    <ResourceDictionary MergedWith="telerikDataControls:TelerikThemeStyles" />
+                   
+                </ResourceDictionary.MergedDictionaries>
+            </ResourceDictionary>
         </ResourceDictionary>        
     </Application.Resources>
 </Application>

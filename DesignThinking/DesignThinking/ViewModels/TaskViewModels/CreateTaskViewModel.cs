@@ -48,6 +48,11 @@ namespace DesignThinking.ViewModels
         private async void SafeTask()
         {
             var teamident = Session.CurrentUser.TeamIdent;
+            if (shortDescription == null || deadline == null || selectedPriority == null)
+            {
+                await createTaskPage.DisplayAlert("Fehler", "Es wurden nicht alle Eigenschaften ausgefüllt.", "OK");
+                return;
+            }
 
             taskService.Save(new Models.Task
             {

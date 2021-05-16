@@ -24,7 +24,7 @@ namespace DesignThinking.ViewModels.ProtocolViewModels
         {
             IsBusy = true;
             OnPropertyChanged(nameof(IsBusy));
-            Title = "Protokollverwaltung";
+            Title = "";
             createProtocolCommand = new Command(o => CreateMethod());
             this.protocolPage = protocolPage;
             this.protocolService = new ProtocolService();

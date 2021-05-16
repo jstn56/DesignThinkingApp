@@ -29,9 +29,9 @@
         </ResourceDictionary>
     </Shell.Resources>
     <TabBar>
-        <ShellContent Title="Überblick" Icon="icon_about" ContentTemplate="{DataTemplate local:DashboardPage}" />
-        <ShellContent Title="Protokoll" Icon="icon-draft" ContentTemplate="{DataTemplate proto:ProtocolOverviewPage}" />
-        <ShellContent Title="Aufgaben" Icon="icon-stopwatch" ContentTemplate="{DataTemplate local:ProjectPage}" />
-        <ShellContent Title="Eintellungen" Icon="icon-user" ContentTemplate="{DataTemplate local:AccountManagementPage}" />
+        <ShellContent Title="Überblick" Icon="icon_info" ContentTemplate="{DataTemplate local:DashboardPage}" />
+        <ShellContent Title="Protokoll" Icon="icon_protokoll" ContentTemplate="{DataTemplate proto:ProtocolOverviewPage}" />
+        <ShellContent Title="Aufgaben" Icon="icon_task" ContentTemplate="{DataTemplate local:ProjectPage}" />
+        <ShellContent Title="Benutzer" Icon="icon_einstellungen" ContentTemplate="{DataTemplate local:AccountManagementPage}" />
     </TabBar>
 </Shell>

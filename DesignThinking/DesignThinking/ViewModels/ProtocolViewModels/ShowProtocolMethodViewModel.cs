@@ -25,7 +25,7 @@ namespace DesignThinking.ViewModels
 
         public ShowProtocolMethodViewModel(ShowProtocolMethodPage showProtocolMethodPage, ProtocolMethod model)
         {
-            Title = "Protokollmethode";
+            Title = "Durchgeführte Methode";
             this.showProtocolMethodPage = showProtocolMethodPage;
             this.model = model;
             imageCommand = new Command(o => OpenImage());

@@ -38,6 +38,11 @@ namespace DesignThinking.ViewModels
 
         private async void CreateTeam()
         {
+            if (teamname == null)
+            {
+                await createTeamPage.DisplayAlert("Fehler", "Das Team wurde nicht benannt.", "OK");
+                return;
+            }
             teamService.Save(new Team
             {
                 Name = this.teamname

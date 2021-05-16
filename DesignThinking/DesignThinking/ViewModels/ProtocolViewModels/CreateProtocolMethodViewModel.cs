@@ -36,7 +36,7 @@ namespace DesignThinking.ViewModels
 
         public CreateProtocolMethodViewModel(CreateProtocolMethodPage createProtocolMethodPage)
         {
-            Title = "Methode hinzufügen";
+            Title = "Methode durchführen";
             this.createProtocolMethodPage = createProtocolMethodPage;
             this.methodService = new MethodService();
             this.protocolService = new ProtocolMethodService();
@@ -58,9 +58,9 @@ namespace DesignThinking.ViewModels
         private async void SafeMethod()
         {
             var teamident = Session.CurrentUser.TeamIdent;
-            if (selectedMethod == null)
+            if (selectedRoom == null || selectedPhase == null || selectedMethod == null)
             {
-                await createProtocolMethodPage.DisplayAlert("Fehler", "Es muss eine Methode ausgewählt werden.", "OK");
+                await createProtocolMethodPage.DisplayAlert("Fehler", "Es wurden nicht alle Eigenschaften ausgewählt.", "OK");
                 return;
             }
             if (Parent is BaseViewModel viewModel)
@@ -83,6 +83,8 @@ namespace DesignThinking.ViewModels
 
             await createProtocolMethodPage.Navigation.PopAsync();
         }
+
+
 
         private async void OpenImage()
         {

@@ -23,7 +23,7 @@ namespace DesignThinking.ViewModels
 
         public UserManagementViewModel(UserManagementPage userPage)
         {
-            Title = "Nutzerdaten";
+            Title = "";
             this.userPage = userPage;
             createTeamCommand = new Command(o => CreateTeam());
             showTeamCommand = new Command(o => ShowTeam());

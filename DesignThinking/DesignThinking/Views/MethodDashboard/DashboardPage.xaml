@@ -10,6 +10,7 @@
             <Color x:Key="Accent">LightGray</Color>
         </ResourceDictionary>
     </ContentPage.Resources>
+    
 
     <Grid>
         <Grid.RowDefinitions>
