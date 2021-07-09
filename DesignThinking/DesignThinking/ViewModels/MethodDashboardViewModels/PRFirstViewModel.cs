@@ -79,6 +79,71 @@ namespace DesignThinking.ViewModels
                 RoomType = "Problemraum",
                 ThinkingType = "Divergent"
             }, prFirstPage));
+            Methods.Add(new MethodViewModel(new Method
+            {
+                ident = 17,
+                Name = "Card Sort (Empathize)",
+                Description = "Diese Methode sieht vor, dass eine oder mehrere Personen auf einem Board grafisch einordnen," +
+                " wie sie beispielsweise ihr persönliches Umfeld, die Umgebung des Kunden oder die visuelle Gestaltung eines" +
+                " Produktes erleben. Dadurch, dass zusammenhängende Konzepte in der Nähe zueinander eingeordnet werden, lässt" +
+                " sich genauer definieren, wie eine Testperson bestimmte Situationen oder Produkte empfindet. Dazu wird das Moodboard " +
+                "in der Empathize-Phase eingesetzt, um einen genauen Überblick über die persönliche Wahrnehmung des Kunden zu erreichen.",
+                Weblink = "https://it-studienprojekt.hosting.uni-hildesheim.de/node/1241",
+                RoomType = "Problemraum",
+                ThinkingType = "Divergent"
+            }, prFirstPage));
+            Methods.Add(new MethodViewModel(new Method
+            {
+                ident = 18,
+                Name = "Kopfstandmethode (Define)",
+                Description = "Diese Methode sieht vor, dass eine oder mehrere Personen auf einem Board grafisch einordnen," +
+                " wie sie beispielsweise ihr persönliches Umfeld, die Umgebung des Kunden oder die visuelle Gestaltung eines" +
+                " Produktes erleben. Dadurch, dass zusammenhängende Konzepte in der Nähe zueinander eingeordnet werden, lässt" +
+                " sich genauer definieren, wie eine Testperson bestimmte Situationen oder Produkte empfindet. Dazu wird das Moodboard " +
+                "in der Empathize-Phase eingesetzt, um einen genauen Überblick über die persönliche Wahrnehmung des Kunden zu erreichen.",
+                Weblink = "https://it-studienprojekt.hosting.uni-hildesheim.de/node/1241",
+                RoomType = "Problemraum",
+                ThinkingType = "Divergent"
+            }, prFirstPage));
+            Methods.Add(new MethodViewModel(new Method
+            {
+                ident = 19,
+                Name = "Ursache-Wirkungs-Diagramm (Empathize)",
+                Description = "Diese Methode sieht vor, dass eine oder mehrere Personen auf einem Board grafisch einordnen," +
+                " wie sie beispielsweise ihr persönliches Umfeld, die Umgebung des Kunden oder die visuelle Gestaltung eines" +
+                " Produktes erleben. Dadurch, dass zusammenhängende Konzepte in der Nähe zueinander eingeordnet werden, lässt" +
+                " sich genauer definieren, wie eine Testperson bestimmte Situationen oder Produkte empfindet. Dazu wird das Moodboard " +
+                "in der Empathize-Phase eingesetzt, um einen genauen Überblick über die persönliche Wahrnehmung des Kunden zu erreichen.",
+                Weblink = "https://it-studienprojekt.hosting.uni-hildesheim.de/node/1241",
+                RoomType = "Problemraum",
+                ThinkingType = "Divergent"
+            }, prFirstPage));
+            Methods.Add(new MethodViewModel(new Method
+            {
+                ident = 20,
+                Name = "Interviews (Empathize)",
+                Description = "Diese Methode sieht vor, dass eine oder mehrere Personen auf einem Board grafisch einordnen," +
+                " wie sie beispielsweise ihr persönliches Umfeld, die Umgebung des Kunden oder die visuelle Gestaltung eines" +
+                " Produktes erleben. Dadurch, dass zusammenhängende Konzepte in der Nähe zueinander eingeordnet werden, lässt" +
+                " sich genauer definieren, wie eine Testperson bestimmte Situationen oder Produkte empfindet. Dazu wird das Moodboard " +
+                "in der Empathize-Phase eingesetzt, um einen genauen Überblick über die persönliche Wahrnehmung des Kunden zu erreichen.",
+                Weblink = "https://it-studienprojekt.hosting.uni-hildesheim.de/node/1241",
+                RoomType = "Problemraum",
+                ThinkingType = "Divergent"
+            }, prFirstPage));
+            Methods.Add(new MethodViewModel(new Method
+            {
+                ident = 21,
+                Name = "Empathy-Map (Define)",
+                Description = "Diese Methode sieht vor, dass eine oder mehrere Personen auf einem Board grafisch einordnen," +
+                " wie sie beispielsweise ihr persönliches Umfeld, die Umgebung des Kunden oder die visuelle Gestaltung eines" +
+                " Produktes erleben. Dadurch, dass zusammenhängende Konzepte in der Nähe zueinander eingeordnet werden, lässt" +
+                " sich genauer definieren, wie eine Testperson bestimmte Situationen oder Produkte empfindet. Dazu wird das Moodboard " +
+                "in der Empathize-Phase eingesetzt, um einen genauen Überblick über die persönliche Wahrnehmung des Kunden zu erreichen.",
+                Weblink = "https://it-studienprojekt.hosting.uni-hildesheim.de/node/1241",
+                RoomType = "Problemraum",
+                ThinkingType = "Divergent"
+            }, prFirstPage));
         }
 
         private async void BackToDashboard()

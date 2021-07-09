@@ -29,7 +29,7 @@ namespace DesignThinking.ViewModels
             Methods = new ObservableCollection<MethodViewModel>();
             Methods.Add(new MethodViewModel(new Method
             {
-                ident = 10,
+                ident = 43,
                 Name = "How-Wow-Now Matrix (Ideate)",
                 Description = "Die How-Wow-Now Matrix wird verwendet um Ideen hinsichtlich ihrer Umsetzbarkeit" +
                 " und Innovation zu bewerten. Sie eignet sich besonders im Anschluss an die divergierende Ideenfindungsphase." +
@@ -41,7 +41,7 @@ namespace DesignThinking.ViewModels
             }, lrSecondPage));
             Methods.Add(new MethodViewModel(new Method
             {
-                ident = 11,
+                ident = 44,
                 Name = "Dotmocracy (Ideate)",
                 Description = "Bei dieser Methode handelt es sich um einen demokratischen Auswahlprozess von Ideen," +
                 " auch Dot-Voting genannt. Dieser Auswahlprozess findet in der Regel innerhalb der Ideenfindungsphase" +

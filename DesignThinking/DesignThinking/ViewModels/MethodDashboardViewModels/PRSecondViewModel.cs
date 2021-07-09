@@ -51,6 +51,175 @@ namespace DesignThinking.ViewModels
                 RoomType = "Problemraum",
                 ThinkingType = "Konvergent"
             }, prSecondPage));
+            Methods.Add(new MethodViewModel(new Method
+            {
+                ident = 22,
+                Name = "Jobs to be Done (Empathize)",
+                Description = "Eine Stakeholder Map ist eine Karte, auf der jeder Stakeholder entsprechend seines" +
+                " Einflusses und seinem Interesse an dem Projekt eingeordnet wird. Üblicherweise werden vier Zonen" +
+                " und damit Gruppen definiert und es wird festgelegt, auf welche Weise Stakeholder gemanaged werden," +
+                " die der jeweiligen Gruppe zugeordnet werden. Oft verwendet wird für die Gruppeneinteilung ´Vollständig zufriedenstellen´," +
+                " ´Im Blick behalten´, ´Vollständig informieren´, ´Ganz nah managen´.",
+                Weblink = "https://it-studienprojekt.hosting.uni-hildesheim.de/node/1242",
+                RoomType = "Problemraum",
+                ThinkingType = "Konvergent"
+            }, prSecondPage));
+            Methods.Add(new MethodViewModel(new Method
+            {
+                ident = 23,
+                Name = "MoSCoW Voting (Define)",
+                Description = "Eine Stakeholder Map ist eine Karte, auf der jeder Stakeholder entsprechend seines" +
+                " Einflusses und seinem Interesse an dem Projekt eingeordnet wird. Üblicherweise werden vier Zonen" +
+                " und damit Gruppen definiert und es wird festgelegt, auf welche Weise Stakeholder gemanaged werden," +
+                " die der jeweiligen Gruppe zugeordnet werden. Oft verwendet wird für die Gruppeneinteilung ´Vollständig zufriedenstellen´," +
+                " ´Im Blick behalten´, ´Vollständig informieren´, ´Ganz nah managen´.",
+                Weblink = "https://it-studienprojekt.hosting.uni-hildesheim.de/node/1242",
+                RoomType = "Problemraum",
+                ThinkingType = "Konvergent"
+            }, prSecondPage));
+            Methods.Add(new MethodViewModel(new Method
+            {
+                ident = 24,
+                Name = "Analogous Empathy (Empathize)",
+                Description = "Eine Stakeholder Map ist eine Karte, auf der jeder Stakeholder entsprechend seines" +
+                " Einflusses und seinem Interesse an dem Projekt eingeordnet wird. Üblicherweise werden vier Zonen" +
+                " und damit Gruppen definiert und es wird festgelegt, auf welche Weise Stakeholder gemanaged werden," +
+                " die der jeweiligen Gruppe zugeordnet werden. Oft verwendet wird für die Gruppeneinteilung ´Vollständig zufriedenstellen´," +
+                " ´Im Blick behalten´, ´Vollständig informieren´, ´Ganz nah managen´.",
+                Weblink = "https://it-studienprojekt.hosting.uni-hildesheim.de/node/1242",
+                RoomType = "Problemraum",
+                ThinkingType = "Konvergent"
+            }, prSecondPage));
+            Methods.Add(new MethodViewModel(new Method
+            {
+                ident = 25,
+                Name = "Camera Journal (Empathize)",
+                Description = "Eine Stakeholder Map ist eine Karte, auf der jeder Stakeholder entsprechend seines" +
+                " Einflusses und seinem Interesse an dem Projekt eingeordnet wird. Üblicherweise werden vier Zonen" +
+                " und damit Gruppen definiert und es wird festgelegt, auf welche Weise Stakeholder gemanaged werden," +
+                " die der jeweiligen Gruppe zugeordnet werden. Oft verwendet wird für die Gruppeneinteilung ´Vollständig zufriedenstellen´," +
+                " ´Im Blick behalten´, ´Vollständig informieren´, ´Ganz nah managen´.",
+                Weblink = "https://it-studienprojekt.hosting.uni-hildesheim.de/node/1242",
+                RoomType = "Problemraum",
+                ThinkingType = "Konvergent"
+            }, prSecondPage));
+            Methods.Add(new MethodViewModel(new Method
+            {
+                ident = 26,
+                Name = "Problem Framing (Empathize)",
+                Description = "Eine Stakeholder Map ist eine Karte, auf der jeder Stakeholder entsprechend seines" +
+                " Einflusses und seinem Interesse an dem Projekt eingeordnet wird. Üblicherweise werden vier Zonen" +
+                " und damit Gruppen definiert und es wird festgelegt, auf welche Weise Stakeholder gemanaged werden," +
+                " die der jeweiligen Gruppe zugeordnet werden. Oft verwendet wird für die Gruppeneinteilung ´Vollständig zufriedenstellen´," +
+                " ´Im Blick behalten´, ´Vollständig informieren´, ´Ganz nah managen´.",
+                Weblink = "https://it-studienprojekt.hosting.uni-hildesheim.de/node/1242",
+                RoomType = "Problemraum",
+                ThinkingType = "Konvergent"
+            }, prSecondPage));
+            Methods.Add(new MethodViewModel(new Method
+            {
+                ident = 27,
+                Name = "Predict Next Year's Headline (Empathize)",
+                Description = "Eine Stakeholder Map ist eine Karte, auf der jeder Stakeholder entsprechend seines" +
+                " Einflusses und seinem Interesse an dem Projekt eingeordnet wird. Üblicherweise werden vier Zonen" +
+                " und damit Gruppen definiert und es wird festgelegt, auf welche Weise Stakeholder gemanaged werden," +
+                " die der jeweiligen Gruppe zugeordnet werden. Oft verwendet wird für die Gruppeneinteilung ´Vollständig zufriedenstellen´," +
+                " ´Im Blick behalten´, ´Vollständig informieren´, ´Ganz nah managen´.",
+                Weblink = "https://it-studienprojekt.hosting.uni-hildesheim.de/node/1242",
+                RoomType = "Problemraum",
+                ThinkingType = "Konvergent"
+            }, prSecondPage));
+            Methods.Add(new MethodViewModel(new Method
+            {
+                ident = 28,
+                Name = "Shadowing (Empathize)",
+                Description = "Eine Stakeholder Map ist eine Karte, auf der jeder Stakeholder entsprechend seines" +
+                " Einflusses und seinem Interesse an dem Projekt eingeordnet wird. Üblicherweise werden vier Zonen" +
+                " und damit Gruppen definiert und es wird festgelegt, auf welche Weise Stakeholder gemanaged werden," +
+                " die der jeweiligen Gruppe zugeordnet werden. Oft verwendet wird für die Gruppeneinteilung ´Vollständig zufriedenstellen´," +
+                " ´Im Blick behalten´, ´Vollständig informieren´, ´Ganz nah managen´.",
+                Weblink = "https://it-studienprojekt.hosting.uni-hildesheim.de/node/1242",
+                RoomType = "Problemraum",
+                ThinkingType = "Konvergent"
+            }, prSecondPage));
+            Methods.Add(new MethodViewModel(new Method
+            {
+                ident = 29,
+                Name = "Bet-Cost-Matrix (Empathize)",
+                Description = "Eine Stakeholder Map ist eine Karte, auf der jeder Stakeholder entsprechend seines" +
+                " Einflusses und seinem Interesse an dem Projekt eingeordnet wird. Üblicherweise werden vier Zonen" +
+                " und damit Gruppen definiert und es wird festgelegt, auf welche Weise Stakeholder gemanaged werden," +
+                " die der jeweiligen Gruppe zugeordnet werden. Oft verwendet wird für die Gruppeneinteilung ´Vollständig zufriedenstellen´," +
+                " ´Im Blick behalten´, ´Vollständig informieren´, ´Ganz nah managen´.",
+                Weblink = "https://it-studienprojekt.hosting.uni-hildesheim.de/node/1242",
+                RoomType = "Problemraum",
+                ThinkingType = "Konvergent"
+            }, prSecondPage));
+            Methods.Add(new MethodViewModel(new Method
+            {
+                ident = 30,
+                Name = "Suchfeldbestimmung (Empathize)",
+                Description = "Eine Stakeholder Map ist eine Karte, auf der jeder Stakeholder entsprechend seines" +
+                " Einflusses und seinem Interesse an dem Projekt eingeordnet wird. Üblicherweise werden vier Zonen" +
+                " und damit Gruppen definiert und es wird festgelegt, auf welche Weise Stakeholder gemanaged werden," +
+                " die der jeweiligen Gruppe zugeordnet werden. Oft verwendet wird für die Gruppeneinteilung ´Vollständig zufriedenstellen´," +
+                " ´Im Blick behalten´, ´Vollständig informieren´, ´Ganz nah managen´.",
+                Weblink = "https://it-studienprojekt.hosting.uni-hildesheim.de/node/1242",
+                RoomType = "Problemraum",
+                ThinkingType = "Konvergent"
+            }, prSecondPage));
+            Methods.Add(new MethodViewModel(new Method
+            {
+                ident = 31,
+                Name = "Emotional Journey Map (Empathize)",
+                Description = "Eine Stakeholder Map ist eine Karte, auf der jeder Stakeholder entsprechend seines" +
+                " Einflusses und seinem Interesse an dem Projekt eingeordnet wird. Üblicherweise werden vier Zonen" +
+                " und damit Gruppen definiert und es wird festgelegt, auf welche Weise Stakeholder gemanaged werden," +
+                " die der jeweiligen Gruppe zugeordnet werden. Oft verwendet wird für die Gruppeneinteilung ´Vollständig zufriedenstellen´," +
+                " ´Im Blick behalten´, ´Vollständig informieren´, ´Ganz nah managen´.",
+                Weblink = "https://it-studienprojekt.hosting.uni-hildesheim.de/node/1242",
+                RoomType = "Problemraum",
+                ThinkingType = "Konvergent"
+            }, prSecondPage));
+            Methods.Add(new MethodViewModel(new Method
+            {
+                ident = 32,
+                Name = "Personas (Empathize)",
+                Description = "Eine Stakeholder Map ist eine Karte, auf der jeder Stakeholder entsprechend seines" +
+                " Einflusses und seinem Interesse an dem Projekt eingeordnet wird. Üblicherweise werden vier Zonen" +
+                " und damit Gruppen definiert und es wird festgelegt, auf welche Weise Stakeholder gemanaged werden," +
+                " die der jeweiligen Gruppe zugeordnet werden. Oft verwendet wird für die Gruppeneinteilung ´Vollständig zufriedenstellen´," +
+                " ´Im Blick behalten´, ´Vollständig informieren´, ´Ganz nah managen´.",
+                Weblink = "https://it-studienprojekt.hosting.uni-hildesheim.de/node/1242",
+                RoomType = "Problemraum",
+                ThinkingType = "Konvergent"
+            }, prSecondPage));
+            Methods.Add(new MethodViewModel(new Method
+            {
+                ident = 33,
+                Name = "Storyboard (Empathize)",
+                Description = "Eine Stakeholder Map ist eine Karte, auf der jeder Stakeholder entsprechend seines" +
+                " Einflusses und seinem Interesse an dem Projekt eingeordnet wird. Üblicherweise werden vier Zonen" +
+                " und damit Gruppen definiert und es wird festgelegt, auf welche Weise Stakeholder gemanaged werden," +
+                " die der jeweiligen Gruppe zugeordnet werden. Oft verwendet wird für die Gruppeneinteilung ´Vollständig zufriedenstellen´," +
+                " ´Im Blick behalten´, ´Vollständig informieren´, ´Ganz nah managen´.",
+                Weblink = "https://it-studienprojekt.hosting.uni-hildesheim.de/node/1242",
+                RoomType = "Problemraum",
+                ThinkingType = "Konvergent"
+            }, prSecondPage));
+            Methods.Add(new MethodViewModel(new Method
+            {
+                ident = 34,
+                Name = "5-Warum-Technik (Empathize)",
+                Description = "Eine Stakeholder Map ist eine Karte, auf der jeder Stakeholder entsprechend seines" +
+                " Einflusses und seinem Interesse an dem Projekt eingeordnet wird. Üblicherweise werden vier Zonen" +
+                " und damit Gruppen definiert und es wird festgelegt, auf welche Weise Stakeholder gemanaged werden," +
+                " die der jeweiligen Gruppe zugeordnet werden. Oft verwendet wird für die Gruppeneinteilung ´Vollständig zufriedenstellen´," +
+                " ´Im Blick behalten´, ´Vollständig informieren´, ´Ganz nah managen´.",
+                Weblink = "https://it-studienprojekt.hosting.uni-hildesheim.de/node/1242",
+                RoomType = "Problemraum",
+                ThinkingType = "Konvergent"
+            }, prSecondPage));
         }
 
         private async void BackToDashboard()

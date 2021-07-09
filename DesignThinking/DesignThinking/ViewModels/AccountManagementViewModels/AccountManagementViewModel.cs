@@ -29,7 +29,7 @@ namespace DesignThinking.ViewModels
         /// <param name="accPage">Page</param>
         public AccountManagementViewModel(AccountManagementPage accPage)
         {
-            Title = "";
+            Title = "Login";
             this.accPage = accPage;
             userManagementCommand = new Command(o => UserManagement());
             registrationCommand = new Command(o => Registration());

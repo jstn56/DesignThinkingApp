@@ -60,7 +60,7 @@
                         <StackLayout Orientation="Vertical">
                             <Label Grid.Column="1"
                                 HorizontalOptions="Center"
-                                       Text="2"/>
+                                       Text="9"/>
                             <Label Grid.Column="2"
                                 HorizontalOptions="Center"
                                        Text="Methoden"/>

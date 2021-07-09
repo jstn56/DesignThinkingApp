@@ -29,7 +29,7 @@ namespace DesignThinking.ViewModels
         {
             IsBusy = true;
             OnPropertyChanged(nameof(IsBusy));
-            Title = "";
+            Title = "Methodenübersicht";
             createMethodCommand = new Command(o => CreateMethod());
             this.protocolPage = protocolPage;
             this.protocolMethodService = new ProtocolMethodService();

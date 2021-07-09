@@ -48,6 +48,83 @@ namespace DesignThinking.ViewModels
                 RoomType = "Implementierungsraum",
                 ThinkingType = "Konvergent"
             }, irSecondPage));
+            Methods.Add(new MethodViewModel(new Method
+            {
+                ident = 56,
+                Name = "I like - I wish - What if (Test)",
+                Description = "Bei der Capture Grid oder auch Feedback Capture Grid Methode sollen während des Testens alle Neuerungen," +
+                " die hierbei aufgedeckt werden, wie etwa neue Ideen, entdeckte Vor-oder Nachteile aber auch Unklarheiten, visuell und übersichtlich" +
+                " in einem Raster festgehalten werden.",
+                Weblink = "https://it-studienprojekt.hosting.uni-hildesheim.de/node/101",
+                RoomType = "Implementierungsraum",
+                ThinkingType = "Konvergent"
+            }, irSecondPage));
+            Methods.Add(new MethodViewModel(new Method
+            {
+                ident = 57,
+                Name = "Be Your Customer (Test)",
+                Description = "Bei der Capture Grid oder auch Feedback Capture Grid Methode sollen während des Testens alle Neuerungen," +
+                " die hierbei aufgedeckt werden, wie etwa neue Ideen, entdeckte Vor-oder Nachteile aber auch Unklarheiten, visuell und übersichtlich" +
+                " in einem Raster festgehalten werden.",
+                Weblink = "https://it-studienprojekt.hosting.uni-hildesheim.de/node/101",
+                RoomType = "Implementierungsraum",
+                ThinkingType = "Konvergent"
+            }, irSecondPage));
+            Methods.Add(new MethodViewModel(new Method
+            {
+                ident = 58,
+                Name = "Tree testing (Test)",
+                Description = "Bei der Capture Grid oder auch Feedback Capture Grid Methode sollen während des Testens alle Neuerungen," +
+                " die hierbei aufgedeckt werden, wie etwa neue Ideen, entdeckte Vor-oder Nachteile aber auch Unklarheiten, visuell und übersichtlich" +
+                " in einem Raster festgehalten werden.",
+                Weblink = "https://it-studienprojekt.hosting.uni-hildesheim.de/node/101",
+                RoomType = "Implementierungsraum",
+                ThinkingType = "Konvergent"
+            }, irSecondPage));
+            Methods.Add(new MethodViewModel(new Method
+            {
+                ident = 59,
+                Name = "Remote Moderated Usability Test (Test)",
+                Description = "Bei der Capture Grid oder auch Feedback Capture Grid Methode sollen während des Testens alle Neuerungen," +
+                " die hierbei aufgedeckt werden, wie etwa neue Ideen, entdeckte Vor-oder Nachteile aber auch Unklarheiten, visuell und übersichtlich" +
+                " in einem Raster festgehalten werden.",
+                Weblink = "https://it-studienprojekt.hosting.uni-hildesheim.de/node/101",
+                RoomType = "Implementierungsraum",
+                ThinkingType = "Konvergent"
+            }, irSecondPage));
+            Methods.Add(new MethodViewModel(new Method
+            {
+                ident = 60,
+                Name = "Osborn Checkliste (Test)",
+                Description = "Bei der Capture Grid oder auch Feedback Capture Grid Methode sollen während des Testens alle Neuerungen," +
+                " die hierbei aufgedeckt werden, wie etwa neue Ideen, entdeckte Vor-oder Nachteile aber auch Unklarheiten, visuell und übersichtlich" +
+                " in einem Raster festgehalten werden.",
+                Weblink = "https://it-studienprojekt.hosting.uni-hildesheim.de/node/101",
+                RoomType = "Implementierungsraum",
+                ThinkingType = "Konvergent"
+            }, irSecondPage));
+            Methods.Add(new MethodViewModel(new Method
+            {
+                ident = 61,
+                Name = "Testing Card (Test)",
+                Description = "Bei der Capture Grid oder auch Feedback Capture Grid Methode sollen während des Testens alle Neuerungen," +
+                " die hierbei aufgedeckt werden, wie etwa neue Ideen, entdeckte Vor-oder Nachteile aber auch Unklarheiten, visuell und übersichtlich" +
+                " in einem Raster festgehalten werden.",
+                Weblink = "https://it-studienprojekt.hosting.uni-hildesheim.de/node/101",
+                RoomType = "Implementierungsraum",
+                ThinkingType = "Konvergent"
+            }, irSecondPage));
+            Methods.Add(new MethodViewModel(new Method
+            {
+                ident = 62,
+                Name = "Nutzertests (Test)",
+                Description = "Bei der Capture Grid oder auch Feedback Capture Grid Methode sollen während des Testens alle Neuerungen," +
+                " die hierbei aufgedeckt werden, wie etwa neue Ideen, entdeckte Vor-oder Nachteile aber auch Unklarheiten, visuell und übersichtlich" +
+                " in einem Raster festgehalten werden.",
+                Weblink = "https://it-studienprojekt.hosting.uni-hildesheim.de/node/101",
+                RoomType = "Implementierungsraum",
+                ThinkingType = "Konvergent"
+            }, irSecondPage));
         }
 
         private async void BackToDashboard()

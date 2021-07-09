@@ -24,7 +24,7 @@ namespace DesignThinking.ViewModels
        
         public ProjectViewModel(ProjectPage projectPage)
         {
-            Title = "";
+            Title = "Aufgabenübersicht";
             createTaskCommand = new Command(o => CreateTask());
             this.projectPage = projectPage;
             this.taskService = new TaskService();

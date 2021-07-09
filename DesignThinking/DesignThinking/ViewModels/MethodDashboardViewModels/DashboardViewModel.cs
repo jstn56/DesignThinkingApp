@@ -21,7 +21,7 @@ namespace DesignThinking.ViewModels
 
         public DashboardViewModel(DashboardPage dashboardPage)
         {
-            Title = "";
+            Title = "Phasenüberblick im Design Thinking";
             this.dashboardPage = dashboardPage;
             openProtocolPage = new Command(o => OpenProtocolPage());
             openPRFirst = new Command(o => OpenPRFirst());

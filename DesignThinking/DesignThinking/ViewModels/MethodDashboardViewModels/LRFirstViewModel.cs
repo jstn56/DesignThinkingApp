@@ -62,6 +62,102 @@ namespace DesignThinking.ViewModels
                 RoomType = "Lösungsraum",
                 ThinkingType = "Divergent"
             }, lrFirstPage));
+            Methods.Add(new MethodViewModel(new Method
+            {
+                ident = 35,
+                Name = "NABC-Methode (Ideate)",
+                Description = "Der Einsatz der Methode Bodystorming eignet sich insbesondere für die Sammlung von Ideen, kann aber auch für" +
+                " das Prototyping genutzt werden. Bodystorming stellt eine Erweiterung des Rollenspiels dar, denn es wird eine Situation aus" +
+                " der Perspektive der betrachtenden Person körperlich nacherlebt. Besonders geeignet ist Bodystorming, wenn die Bedürfnisse von" +
+                " Kunden noch nicht vollständig erfasst sind.",
+                Weblink = "https://it-studienprojekt.hosting.uni-hildesheim.de/node/254",
+                RoomType = "Lösungsraum",
+                ThinkingType = "Divergent"
+            }, lrFirstPage));
+            Methods.Add(new MethodViewModel(new Method
+            {
+                ident = 36,
+                Name = "Random Input (Ideate)",
+                Description = "Der Einsatz der Methode Bodystorming eignet sich insbesondere für die Sammlung von Ideen, kann aber auch für" +
+                " das Prototyping genutzt werden. Bodystorming stellt eine Erweiterung des Rollenspiels dar, denn es wird eine Situation aus" +
+                " der Perspektive der betrachtenden Person körperlich nacherlebt. Besonders geeignet ist Bodystorming, wenn die Bedürfnisse von" +
+                " Kunden noch nicht vollständig erfasst sind.",
+                Weblink = "https://it-studienprojekt.hosting.uni-hildesheim.de/node/254",
+                RoomType = "Lösungsraum",
+                ThinkingType = "Divergent"
+            }, lrFirstPage));
+            Methods.Add(new MethodViewModel(new Method
+            {
+                ident = 37,
+                Name = "Walt-Disney-Methode (Ideate)",
+                Description = "Der Einsatz der Methode Bodystorming eignet sich insbesondere für die Sammlung von Ideen, kann aber auch für" +
+                " das Prototyping genutzt werden. Bodystorming stellt eine Erweiterung des Rollenspiels dar, denn es wird eine Situation aus" +
+                " der Perspektive der betrachtenden Person körperlich nacherlebt. Besonders geeignet ist Bodystorming, wenn die Bedürfnisse von" +
+                " Kunden noch nicht vollständig erfasst sind.",
+                Weblink = "https://it-studienprojekt.hosting.uni-hildesheim.de/node/254",
+                RoomType = "Lösungsraum",
+                ThinkingType = "Divergent"
+            }, lrFirstPage));
+            Methods.Add(new MethodViewModel(new Method
+            {
+                ident = 38,
+                Name = "Gut Check (Ideate)",
+                Description = "Der Einsatz der Methode Bodystorming eignet sich insbesondere für die Sammlung von Ideen, kann aber auch für" +
+                " das Prototyping genutzt werden. Bodystorming stellt eine Erweiterung des Rollenspiels dar, denn es wird eine Situation aus" +
+                " der Perspektive der betrachtenden Person körperlich nacherlebt. Besonders geeignet ist Bodystorming, wenn die Bedürfnisse von" +
+                " Kunden noch nicht vollständig erfasst sind.",
+                Weblink = "https://it-studienprojekt.hosting.uni-hildesheim.de/node/254",
+                RoomType = "Lösungsraum",
+                ThinkingType = "Divergent"
+            }, lrFirstPage));
+            Methods.Add(new MethodViewModel(new Method
+            {
+                ident = 39,
+                Name = "635-Methode (Ideate)",
+                Description = "Der Einsatz der Methode Bodystorming eignet sich insbesondere für die Sammlung von Ideen, kann aber auch für" +
+                " das Prototyping genutzt werden. Bodystorming stellt eine Erweiterung des Rollenspiels dar, denn es wird eine Situation aus" +
+                " der Perspektive der betrachtenden Person körperlich nacherlebt. Besonders geeignet ist Bodystorming, wenn die Bedürfnisse von" +
+                " Kunden noch nicht vollständig erfasst sind.",
+                Weblink = "https://it-studienprojekt.hosting.uni-hildesheim.de/node/254",
+                RoomType = "Lösungsraum",
+                ThinkingType = "Divergent"
+            }, lrFirstPage));
+            Methods.Add(new MethodViewModel(new Method
+            {
+                ident = 40,
+                Name = "Collective Notebook (Ideate)",
+                Description = "Der Einsatz der Methode Bodystorming eignet sich insbesondere für die Sammlung von Ideen, kann aber auch für" +
+                " das Prototyping genutzt werden. Bodystorming stellt eine Erweiterung des Rollenspiels dar, denn es wird eine Situation aus" +
+                " der Perspektive der betrachtenden Person körperlich nacherlebt. Besonders geeignet ist Bodystorming, wenn die Bedürfnisse von" +
+                " Kunden noch nicht vollständig erfasst sind.",
+                Weblink = "https://it-studienprojekt.hosting.uni-hildesheim.de/node/254",
+                RoomType = "Lösungsraum",
+                ThinkingType = "Divergent"
+            }, lrFirstPage));
+            Methods.Add(new MethodViewModel(new Method
+            {
+                ident = 41,
+                Name = "Mindmapping (Ideate)",
+                Description = "Der Einsatz der Methode Bodystorming eignet sich insbesondere für die Sammlung von Ideen, kann aber auch für" +
+                " das Prototyping genutzt werden. Bodystorming stellt eine Erweiterung des Rollenspiels dar, denn es wird eine Situation aus" +
+                " der Perspektive der betrachtenden Person körperlich nacherlebt. Besonders geeignet ist Bodystorming, wenn die Bedürfnisse von" +
+                " Kunden noch nicht vollständig erfasst sind.",
+                Weblink = "https://it-studienprojekt.hosting.uni-hildesheim.de/node/254",
+                RoomType = "Lösungsraum",
+                ThinkingType = "Divergent"
+            }, lrFirstPage));
+            Methods.Add(new MethodViewModel(new Method
+            {
+                ident = 42,
+                Name = "Brainwriting (Ideate)",
+                Description = "Der Einsatz der Methode Bodystorming eignet sich insbesondere für die Sammlung von Ideen, kann aber auch für" +
+                " das Prototyping genutzt werden. Bodystorming stellt eine Erweiterung des Rollenspiels dar, denn es wird eine Situation aus" +
+                " der Perspektive der betrachtenden Person körperlich nacherlebt. Besonders geeignet ist Bodystorming, wenn die Bedürfnisse von" +
+                " Kunden noch nicht vollständig erfasst sind.",
+                Weblink = "https://it-studienprojekt.hosting.uni-hildesheim.de/node/254",
+                RoomType = "Lösungsraum",
+                ThinkingType = "Divergent"
+            }, lrFirstPage));
         }
 
         private async void BackToDashboard()

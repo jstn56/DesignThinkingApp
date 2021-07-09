@@ -21,7 +21,6 @@
         </Grid.RowDefinitions>
         <ScrollView Grid.Row="0">
             <StackLayout HorizontalOptions="Center" Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
-                <Label Text="Methodenüberblick" HorizontalOptions="Center" FontSize="Large"/>
                 <Grid HorizontalOptions="Center">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />

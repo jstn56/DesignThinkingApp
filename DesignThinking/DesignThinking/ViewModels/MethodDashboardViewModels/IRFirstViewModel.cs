@@ -64,6 +64,138 @@ namespace DesignThinking.ViewModels
                 RoomType = "Implementierungsraum",
                 ThinkingType = "Divergent"
             }, irFirstPage));
+            Methods.Add(new MethodViewModel(new Method
+            {
+                ident = 45,
+                Name = "MVP (Prototyp)",
+                Description = "Ein Papierprototyp visualisiert die elementaren Merkmale einer Produktidee, wie z.B. die Entwicklung einer Anwendung." +
+                " Die Programmoberfläche wird dabei, samt der mit ihren möglichen Interaktionen, in Abstrakter Form dargestellt. Es geht dabei nicht" +
+                " um das Testen der Anwendung, sondern der Darstellung des Konzepts und der möglichen Aufteilung einzelner Anwendungskomponenten. Dabei" +
+                " werden bewusst einfache Hilfsmittel verwendet.",
+                Weblink = "https://it-studienprojekt.hosting.uni-hildesheim.de/node/106",
+                RoomType = "Implementierungsraum",
+                ThinkingType = "Divergent"
+            }, irFirstPage));
+            Methods.Add(new MethodViewModel(new Method
+            {
+                ident = 46,
+                Name = "Flash It (Prototyp)",
+                Description = "Ein Papierprototyp visualisiert die elementaren Merkmale einer Produktidee, wie z.B. die Entwicklung einer Anwendung." +
+                " Die Programmoberfläche wird dabei, samt der mit ihren möglichen Interaktionen, in Abstrakter Form dargestellt. Es geht dabei nicht" +
+                " um das Testen der Anwendung, sondern der Darstellung des Konzepts und der möglichen Aufteilung einzelner Anwendungskomponenten. Dabei" +
+                " werden bewusst einfache Hilfsmittel verwendet.",
+                Weblink = "https://it-studienprojekt.hosting.uni-hildesheim.de/node/106",
+                RoomType = "Implementierungsraum",
+                ThinkingType = "Divergent"
+            }, irFirstPage));
+            Methods.Add(new MethodViewModel(new Method
+            {
+                ident = 47,
+                Name = "A/B Testing (Testing)",
+                Description = "Ein Papierprototyp visualisiert die elementaren Merkmale einer Produktidee, wie z.B. die Entwicklung einer Anwendung." +
+                " Die Programmoberfläche wird dabei, samt der mit ihren möglichen Interaktionen, in Abstrakter Form dargestellt. Es geht dabei nicht" +
+                " um das Testen der Anwendung, sondern der Darstellung des Konzepts und der möglichen Aufteilung einzelner Anwendungskomponenten. Dabei" +
+                " werden bewusst einfache Hilfsmittel verwendet.",
+                Weblink = "https://it-studienprojekt.hosting.uni-hildesheim.de/node/106",
+                RoomType = "Implementierungsraum",
+                ThinkingType = "Divergent"
+            }, irFirstPage));
+            Methods.Add(new MethodViewModel(new Method
+            {
+                ident = 48,
+                Name = "Cardboard Prototyping (Prototyp)",
+                Description = "Ein Papierprototyp visualisiert die elementaren Merkmale einer Produktidee, wie z.B. die Entwicklung einer Anwendung." +
+                " Die Programmoberfläche wird dabei, samt der mit ihren möglichen Interaktionen, in Abstrakter Form dargestellt. Es geht dabei nicht" +
+                " um das Testen der Anwendung, sondern der Darstellung des Konzepts und der möglichen Aufteilung einzelner Anwendungskomponenten. Dabei" +
+                " werden bewusst einfache Hilfsmittel verwendet.",
+                Weblink = "https://it-studienprojekt.hosting.uni-hildesheim.de/node/106",
+                RoomType = "Implementierungsraum",
+                ThinkingType = "Divergent"
+            }, irFirstPage));
+            Methods.Add(new MethodViewModel(new Method
+            {
+                ident = 49,
+                Name = "Quick and Dirty Prototyping (Prototyp)",
+                Description = "Ein Papierprototyp visualisiert die elementaren Merkmale einer Produktidee, wie z.B. die Entwicklung einer Anwendung." +
+                " Die Programmoberfläche wird dabei, samt der mit ihren möglichen Interaktionen, in Abstrakter Form dargestellt. Es geht dabei nicht" +
+                " um das Testen der Anwendung, sondern der Darstellung des Konzepts und der möglichen Aufteilung einzelner Anwendungskomponenten. Dabei" +
+                " werden bewusst einfache Hilfsmittel verwendet.",
+                Weblink = "https://it-studienprojekt.hosting.uni-hildesheim.de/node/106",
+                RoomType = "Implementierungsraum",
+                ThinkingType = "Divergent"
+            }, irFirstPage));
+            Methods.Add(new MethodViewModel(new Method
+            {
+                ident = 50,
+                Name = "Click Dummy (Prototyp)",
+                Description = "Ein Papierprototyp visualisiert die elementaren Merkmale einer Produktidee, wie z.B. die Entwicklung einer Anwendung." +
+                " Die Programmoberfläche wird dabei, samt der mit ihren möglichen Interaktionen, in Abstrakter Form dargestellt. Es geht dabei nicht" +
+                " um das Testen der Anwendung, sondern der Darstellung des Konzepts und der möglichen Aufteilung einzelner Anwendungskomponenten. Dabei" +
+                " werden bewusst einfache Hilfsmittel verwendet.",
+                Weblink = "https://it-studienprojekt.hosting.uni-hildesheim.de/node/106",
+                RoomType = "Implementierungsraum",
+                ThinkingType = "Divergent"
+            }, irFirstPage));
+            Methods.Add(new MethodViewModel(new Method
+            {
+                ident = 51,
+                Name = "Storyboard (Prototyp)",
+                Description = "Ein Papierprototyp visualisiert die elementaren Merkmale einer Produktidee, wie z.B. die Entwicklung einer Anwendung." +
+                " Die Programmoberfläche wird dabei, samt der mit ihren möglichen Interaktionen, in Abstrakter Form dargestellt. Es geht dabei nicht" +
+                " um das Testen der Anwendung, sondern der Darstellung des Konzepts und der möglichen Aufteilung einzelner Anwendungskomponenten. Dabei" +
+                " werden bewusst einfache Hilfsmittel verwendet.",
+                Weblink = "https://it-studienprojekt.hosting.uni-hildesheim.de/node/106",
+                RoomType = "Implementierungsraum",
+                ThinkingType = "Divergent"
+            }, irFirstPage));
+            Methods.Add(new MethodViewModel(new Method
+            {
+                ident = 52,
+                Name = "Ereignisgesteuerte Prozesskette (Prototyp)",
+                Description = "Ein Papierprototyp visualisiert die elementaren Merkmale einer Produktidee, wie z.B. die Entwicklung einer Anwendung." +
+                " Die Programmoberfläche wird dabei, samt der mit ihren möglichen Interaktionen, in Abstrakter Form dargestellt. Es geht dabei nicht" +
+                " um das Testen der Anwendung, sondern der Darstellung des Konzepts und der möglichen Aufteilung einzelner Anwendungskomponenten. Dabei" +
+                " werden bewusst einfache Hilfsmittel verwendet.",
+                Weblink = "https://it-studienprojekt.hosting.uni-hildesheim.de/node/106",
+                RoomType = "Implementierungsraum",
+                ThinkingType = "Divergent"
+            }, irFirstPage));
+            Methods.Add(new MethodViewModel(new Method
+            {
+                ident = 53,
+                Name = "Wizard of Oz (Prototyp)",
+                Description = "Ein Papierprototyp visualisiert die elementaren Merkmale einer Produktidee, wie z.B. die Entwicklung einer Anwendung." +
+                " Die Programmoberfläche wird dabei, samt der mit ihren möglichen Interaktionen, in Abstrakter Form dargestellt. Es geht dabei nicht" +
+                " um das Testen der Anwendung, sondern der Darstellung des Konzepts und der möglichen Aufteilung einzelner Anwendungskomponenten. Dabei" +
+                " werden bewusst einfache Hilfsmittel verwendet.",
+                Weblink = "https://it-studienprojekt.hosting.uni-hildesheim.de/node/106",
+                RoomType = "Implementierungsraum",
+                ThinkingType = "Divergent"
+            }, irFirstPage));
+            Methods.Add(new MethodViewModel(new Method
+            {
+                ident = 54,
+                Name = "Dark Horse Prototype (Prototyp)",
+                Description = "Ein Papierprototyp visualisiert die elementaren Merkmale einer Produktidee, wie z.B. die Entwicklung einer Anwendung." +
+                " Die Programmoberfläche wird dabei, samt der mit ihren möglichen Interaktionen, in Abstrakter Form dargestellt. Es geht dabei nicht" +
+                " um das Testen der Anwendung, sondern der Darstellung des Konzepts und der möglichen Aufteilung einzelner Anwendungskomponenten. Dabei" +
+                " werden bewusst einfache Hilfsmittel verwendet.",
+                Weblink = "https://it-studienprojekt.hosting.uni-hildesheim.de/node/106",
+                RoomType = "Implementierungsraum",
+                ThinkingType = "Divergent"
+            }, irFirstPage));
+            Methods.Add(new MethodViewModel(new Method
+            {
+                ident = 55,
+                Name = "Rollenspiel (Prototyp)",
+                Description = "Ein Papierprototyp visualisiert die elementaren Merkmale einer Produktidee, wie z.B. die Entwicklung einer Anwendung." +
+                " Die Programmoberfläche wird dabei, samt der mit ihren möglichen Interaktionen, in Abstrakter Form dargestellt. Es geht dabei nicht" +
+                " um das Testen der Anwendung, sondern der Darstellung des Konzepts und der möglichen Aufteilung einzelner Anwendungskomponenten. Dabei" +
+                " werden bewusst einfache Hilfsmittel verwendet.",
+                Weblink = "https://it-studienprojekt.hosting.uni-hildesheim.de/node/106",
+                RoomType = "Implementierungsraum",
+                ThinkingType = "Divergent"
+            }, irFirstPage));
         }
 
         private async void BackToDashboard()

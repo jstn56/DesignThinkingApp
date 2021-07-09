@@ -60,7 +60,7 @@
                     <ListView.Header>
                         <StackLayout Orientation="Vertical">
                             <Label HorizontalOptions="Center"
-                                       Text="2"/>
+                                       Text="15"/>
                             <Label HorizontalOptions="Center"
                                        Text="Methoden"/>
                         </StackLayout>
